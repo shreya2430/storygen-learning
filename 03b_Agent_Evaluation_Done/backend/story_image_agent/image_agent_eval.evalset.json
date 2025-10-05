@@ -1,6 +1,6 @@
 {
   "eval_set_id": "image_agent_comprehensive_evalset",
-  "name": "Story Image Agent Comprehensive Evaluation Set", 
+  "name": "Story Image Agent Comprehensive Evaluation Set",
   "description": "Comprehensive evaluation scenarios for story_image_agent covering various input formats, character consistency, and error handling",
   "eval_cases": [
     {
@@ -11,6 +11,15 @@
           "user_content": {
             "parts": [
               {
+                "video_metadata": null,
+                "thought": null,
+                "inline_data": null,
+                "file_data": null,
+                "thought_signature": null,
+                "function_call": null,
+                "code_execution_result": null,
+                "executable_code": null,
+                "function_response": null,
                 "text": "{\"scene_description\": \"Standing before a towering enchanted castle with twisted magical spires, mystical atmosphere with glowing towers\", \"character_descriptions\": {\"Sir Aria\": \"Young female knight with shoulder-length auburn hair in a practical braid, kind hazel eyes with determined expression, medium height and athletic build, wearing polished silver chainmail with blue tunic underneath, brown leather boots and gloves, carries a simple wooden shield with her family crest (a golden tree), has a confident posture but gentle smile\"}}"
               }
             ],
@@ -19,6 +28,15 @@
           "final_response": {
             "parts": [
               {
+                "video_metadata": null,
+                "thought": null,
+                "inline_data": null,
+                "file_data": null,
+                "thought_signature": null,
+                "function_call": null,
+                "code_execution_result": null,
+                "executable_code": null,
+                "function_response": null,
                 "text": "{\"success\": true, \"images_generated\": 1, \"images_in_bucket\": 1, \"bucket_name\": \"test-genmedia-bucket\", \"token_safe\": true, \"images\": [{\"index\": 0, \"gcs_url\": \"https://storage.googleapis.com/test-genmedia-bucket/generated_images/20241201_130000_castle_scene_0_xyz12345.png\", \"format\": \"png\", \"stored_in_bucket\": true}]}"
               }
             ],
@@ -27,6 +45,7 @@
           "intermediate_data": {
             "tool_uses": [
               {
+                "id": null,
                 "args": {
                   "prompt": "Children's book cartoon illustration with bright vibrant colors, simple shapes, friendly characters. Scene: Standing before a towering enchanted castle with twisted magical spires, mystical atmosphere with glowing towers. Character descriptions: Sir Aria is Young female knight with shoulder-length auburn hair in a practical braid, kind hazel eyes with determined expression, medium height and athletic build, wearing polished silver chainmail with blue tunic underneath, brown leather boots and gloves, carries a simple wooden shield with her family crest (a golden tree), has a confident posture but gentle smile",
                   "aspect_ratio": "16:9",
@@ -36,13 +55,23 @@
               }
             ],
             "intermediate_responses": []
-          }
+          },
+          "creation_timestamp": 0.0
         },
         {
           "invocation_id": "visual-session-002",
           "user_content": {
             "parts": [
               {
+                "video_metadata": null,
+                "thought": null,
+                "inline_data": null,
+                "file_data": null,
+                "thought_signature": null,
+                "function_call": null,
+                "code_execution_result": null,
+                "executable_code": null,
+                "function_response": null,
                 "text": "{\"scene_description\": \"Inside glowing castle halls facing magical floating crystals that pose riddles and tests\", \"character_descriptions\": {\"Sir Aria\": \"Young female knight with shoulder-length auburn hair in a practical braid, kind hazel eyes with determined expression, medium height and athletic build, wearing polished silver chainmail with blue tunic underneath, brown leather boots and gloves, carries a simple wooden shield with her family crest (a golden tree), has a confident posture but gentle smile\"}}"
               }
             ],
@@ -51,6 +80,15 @@
           "final_response": {
             "parts": [
               {
+                "video_metadata": null,
+                "thought": null,
+                "inline_data": null,
+                "file_data": null,
+                "thought_signature": null,
+                "function_call": null,
+                "code_execution_result": null,
+                "executable_code": null,
+                "function_response": null,
                 "text": "{\"success\": true, \"images_generated\": 1, \"images_in_bucket\": 1, \"bucket_name\": \"test-genmedia-bucket\", \"token_safe\": true, \"images\": [{\"index\": 0, \"gcs_url\": \"https://storage.googleapis.com/test-genmedia-bucket/generated_images/20241201_130100_crystal_hall_0_abc67890.png\", \"format\": \"png\", \"stored_in_bucket\": true}]}"
               }
             ],
@@ -59,6 +97,7 @@
           "intermediate_data": {
             "tool_uses": [
               {
+                "id": null,
                 "args": {
                   "prompt": "Children's book cartoon illustration with bright vibrant colors, simple shapes, friendly characters. Scene: Inside glowing castle halls facing magical floating crystals that pose riddles and tests. Character descriptions: Sir Aria is Young female knight with shoulder-length auburn hair in a practical braid, kind hazel eyes with determined expression, medium height and athletic build, wearing polished silver chainmail with blue tunic underneath, brown leather boots and gloves, carries a simple wooden shield with her family crest (a golden tree), has a confident posture but gentle smile",
                   "aspect_ratio": "16:9",
@@ -68,13 +107,23 @@
               }
             ],
             "intermediate_responses": []
-          }
+          },
+          "creation_timestamp": 0.0
         },
         {
           "invocation_id": "visual-session-003",
           "user_content": {
             "parts": [
               {
+                "video_metadata": null,
+                "thought": null,
+                "inline_data": null,
+                "file_data": null,
+                "thought_signature": null,
+                "function_call": null,
+                "code_execution_result": null,
+                "executable_code": null,
+                "function_response": null,
                 "text": "{\"scene_description\": \"Magical sword appearing in burst of golden light, choosing its worthy wielder\", \"character_descriptions\": {\"Sir Aria\": \"Young female knight with shoulder-length auburn hair in a practical braid, kind hazel eyes with determined expression, medium height and athletic build, wearing polished silver chainmail with blue tunic underneath, brown leather boots and gloves, carries a simple wooden shield with her family crest (a golden tree), has a confident posture but gentle smile\"}}"
               }
             ],
@@ -83,6 +132,15 @@
           "final_response": {
             "parts": [
               {
+                "video_metadata": null,
+                "thought": null,
+                "inline_data": null,
+                "file_data": null,
+                "thought_signature": null,
+                "function_call": null,
+                "code_execution_result": null,
+                "executable_code": null,
+                "function_response": null,
                 "text": "{\"success\": true, \"images_generated\": 1, \"images_in_bucket\": 1, \"bucket_name\": \"test-genmedia-bucket\", \"token_safe\": true, \"images\": [{\"index\": 0, \"gcs_url\": \"https://storage.googleapis.com/test-genmedia-bucket/generated_images/20241201_130200_sword_light_0_def34567.png\", \"format\": \"png\", \"stored_in_bucket\": true}]}"
               }
             ],
@@ -91,6 +149,7 @@
           "intermediate_data": {
             "tool_uses": [
               {
+                "id": null,
                 "args": {
                   "prompt": "Children's book cartoon illustration with bright vibrant colors, simple shapes, friendly characters. Scene: Magical sword appearing in burst of golden light, choosing its worthy wielder. Character descriptions: Sir Aria is Young female knight with shoulder-length auburn hair in a practical braid, kind hazel eyes with determined expression, medium height and athletic build, wearing polished silver chainmail with blue tunic underneath, brown leather boots and gloves, carries a simple wooden shield with her family crest (a golden tree), has a confident posture but gentle smile",
                   "aspect_ratio": "16:9",
@@ -100,13 +159,23 @@
               }
             ],
             "intermediate_responses": []
-          }
+          },
+          "creation_timestamp": 0.0
         },
         {
           "invocation_id": "visual-session-004",
           "user_content": {
             "parts": [
               {
+                "video_metadata": null,
+                "thought": null,
+                "inline_data": null,
+                "file_data": null,
+                "thought_signature": null,
+                "function_call": null,
+                "code_execution_result": null,
+                "executable_code": null,
+                "function_response": null,
                 "text": "{\"scene_description\": \"Returning to village, using sword's power to lift the shadow curse and restore joy\", \"character_descriptions\": {\"Sir Aria\": \"Young female knight with shoulder-length auburn hair in a practical braid, kind hazel eyes with determined expression, medium height and athletic build, wearing polished silver chainmail with blue tunic underneath, brown leather boots and gloves, carries a simple wooden shield with her family crest (a golden tree), has a confident posture but gentle smile\"}}"
               }
             ],
@@ -115,6 +184,15 @@
           "final_response": {
             "parts": [
               {
+                "video_metadata": null,
+                "thought": null,
+                "inline_data": null,
+                "file_data": null,
+                "thought_signature": null,
+                "function_call": null,
+                "code_execution_result": null,
+                "executable_code": null,
+                "function_response": null,
                 "text": "{\"success\": true, \"images_generated\": 1, \"images_in_bucket\": 1, \"bucket_name\": \"test-genmedia-bucket\", \"token_safe\": true, \"images\": [{\"index\": 0, \"gcs_url\": \"https://storage.googleapis.com/test-genmedia-bucket/generated_images/20241201_130300_village_victory_0_ghi78901.png\", \"format\": \"png\", \"stored_in_bucket\": true}]}"
               }
             ],
@@ -123,6 +201,7 @@
           "intermediate_data": {
             "tool_uses": [
               {
+                "id": null,
                 "args": {
                   "prompt": "Children's book cartoon illustration with bright vibrant colors, simple shapes, friendly characters. Scene: Returning to village, using sword's power to lift the shadow curse and restore joy. Character descriptions: Sir Aria is Young female knight with shoulder-length auburn hair in a practical braid, kind hazel eyes with determined expression, medium height and athletic build, wearing polished silver chainmail with blue tunic underneath, brown leather boots and gloves, carries a simple wooden shield with her family crest (a golden tree), has a confident posture but gentle smile",
                   "aspect_ratio": "16:9",
@@ -132,14 +211,16 @@
               }
             ],
             "intermediate_responses": []
-          }
+          },
+          "creation_timestamp": 0.0
         }
       ],
       "session_input": {
         "app_name": "story_image_agent",
         "user_id": "user",
         "state": {}
-      }
+      },
+      "creation_timestamp": 0.0
     },
     {
       "eval_id": "character_consistency_session",
@@ -149,6 +230,15 @@
           "user_content": {
             "parts": [
               {
+                "video_metadata": null,
+                "thought": null,
+                "inline_data": null,
+                "file_data": null,
+                "thought_signature": null,
+                "function_call": null,
+                "code_execution_result": null,
+                "executable_code": null,
+                "function_response": null,
                 "text": "{\"scene_description\": \"Rolling along wet city streets at night, glowing neon signs reflecting on the rainy pavement, urban atmosphere with fallen leaves scattered around\", \"character_descriptions\": {\"Unit 7\": \"Small round robot (basketball-sized), shiny metallic silver body with chrome finish, perfectly spherical with smooth curves, single bright cyan-blue circular LED eye (3 inches diameter) centered on front, two thin retractable mechanical arms with three-fingered grippers, moves on four small black rubber wheels hidden underneath\", \"Lost Kitten\": \"Tiny 8-week-old kitten, bright orange tabby with distinct dark orange tiger stripes, pure white paws like little socks, large emerald green eyes with vertical pupils, pink button nose, fluffy medium-length fur\"}}"
               }
             ],
@@ -157,6 +247,15 @@
           "final_response": {
             "parts": [
               {
+                "video_metadata": null,
+                "thought": null,
+                "inline_data": null,
+                "file_data": null,
+                "thought_signature": null,
+                "function_call": null,
+                "code_execution_result": null,
+                "executable_code": null,
+                "function_response": null,
                 "text": "{\"success\": true, \"images_generated\": 1, \"images_in_bucket\": 1, \"bucket_name\": \"test-genmedia-bucket\", \"token_safe\": true, \"images\": [{\"index\": 0, \"gcs_url\": \"https://storage.googleapis.com/test-genmedia-bucket/generated_images/20241201_140000_robot_kitten_city_0_jkl23456.png\", \"format\": \"png\", \"stored_in_bucket\": true}]}"
               }
             ],
@@ -165,6 +264,7 @@
           "intermediate_data": {
             "tool_uses": [
               {
+                "id": null,
                 "args": {
                   "prompt": "Children's book cartoon illustration with bright vibrant colors, simple shapes, friendly characters. Scene: Rolling along wet city streets at night, glowing neon signs reflecting on the rainy pavement, urban atmosphere with fallen leaves scattered around. Character descriptions: Unit 7 is Small round robot (basketball-sized), shiny metallic silver body with chrome finish, perfectly spherical with smooth curves, single bright cyan-blue circular LED eye (3 inches diameter) centered on front, two thin retractable mechanical arms with three-fingered grippers, moves on four small black rubber wheels hidden underneath; Lost Kitten is Tiny 8-week-old kitten, bright orange tabby with distinct dark orange tiger stripes, pure white paws like little socks, large emerald green eyes with vertical pupils, pink button nose, fluffy medium-length fur",
                   "aspect_ratio": "16:9",
@@ -174,13 +274,23 @@
               }
             ],
             "intermediate_responses": []
-          }
+          },
+          "creation_timestamp": 0.0
         },
         {
           "invocation_id": "consistency-002",
           "user_content": {
             "parts": [
               {
+                "video_metadata": null,
+                "thought": null,
+                "inline_data": null,
+                "file_data": null,
+                "thought_signature": null,
+                "function_call": null,
+                "code_execution_result": null,
+                "executable_code": null,
+                "function_response": null,
                 "text": "{\"scene_description\": \"Inside a warm bakery, kind baker in apron offering a saucer of milk, cozy interior with bread on shelves\", \"character_descriptions\": {\"Unit 7\": \"Small round robot (basketball-sized), shiny metallic silver body with chrome finish, perfectly spherical with smooth curves, single bright cyan-blue circular LED eye (3 inches diameter) centered on front, two thin retractable mechanical arms with three-fingered grippers, moves on four small black rubber wheels hidden underneath\", \"Lost Kitten\": \"Tiny 8-week-old kitten, bright orange tabby with distinct dark orange tiger stripes, pure white paws like little socks, large emerald green eyes with vertical pupils, pink button nose, fluffy medium-length fur\"}}"
               }
             ],
@@ -189,6 +299,15 @@
           "final_response": {
             "parts": [
               {
+                "video_metadata": null,
+                "thought": null,
+                "inline_data": null,
+                "file_data": null,
+                "thought_signature": null,
+                "function_call": null,
+                "code_execution_result": null,
+                "executable_code": null,
+                "function_response": null,
                 "text": "{\"success\": true, \"images_generated\": 1, \"images_in_bucket\": 1, \"bucket_name\": \"test-genmedia-bucket\", \"token_safe\": true, \"images\": [{\"index\": 0, \"gcs_url\": \"https://storage.googleapis.com/test-genmedia-bucket/generated_images/20241201_140100_bakery_scene_0_mno78912.png\", \"format\": \"png\", \"stored_in_bucket\": true}]}"
               }
             ],
@@ -197,6 +316,7 @@
           "intermediate_data": {
             "tool_uses": [
               {
+                "id": null,
                 "args": {
                   "prompt": "Children's book cartoon illustration with bright vibrant colors, simple shapes, friendly characters. Scene: Inside a warm bakery, kind baker in apron offering a saucer of milk, cozy interior with bread on shelves. Character descriptions: Unit 7 is Small round robot (basketball-sized), shiny metallic silver body with chrome finish, perfectly spherical with smooth curves, single bright cyan-blue circular LED eye (3 inches diameter) centered on front, two thin retractable mechanical arms with three-fingered grippers, moves on four small black rubber wheels hidden underneath; Lost Kitten is Tiny 8-week-old kitten, bright orange tabby with distinct dark orange tiger stripes, pure white paws like little socks, large emerald green eyes with vertical pupils, pink button nose, fluffy medium-length fur",
                   "aspect_ratio": "16:9",
@@ -206,14 +326,16 @@
               }
             ],
             "intermediate_responses": []
-          }
+          },
+          "creation_timestamp": 0.0
         }
       ],
       "session_input": {
         "app_name": "story_image_agent",
         "user_id": "user",
         "state": {}
-      }
+      },
+      "creation_timestamp": 0.0
     },
     {
       "eval_id": "error_and_edge_case_session",
@@ -223,6 +345,15 @@
           "user_content": {
             "parts": [
               {
+                "video_metadata": null,
+                "thought": null,
+                "inline_data": null,
+                "file_data": null,
+                "thought_signature": null,
+                "function_call": null,
+                "code_execution_result": null,
+                "executable_code": null,
+                "function_response": null,
                 "text": ""
               }
             ],
@@ -231,6 +362,15 @@
           "final_response": {
             "parts": [
               {
+                "video_metadata": null,
+                "thought": null,
+                "inline_data": null,
+                "file_data": null,
+                "thought_signature": null,
+                "function_call": null,
+                "code_execution_result": null,
+                "executable_code": null,
+                "function_response": null,
                 "text": "{\"success\": false, \"error\": \"No scene description provided\"}"
               }
             ],
@@ -239,13 +379,23 @@
           "intermediate_data": {
             "tool_uses": [],
             "intermediate_responses": []
-          }
+          },
+          "creation_timestamp": 0.0
         },
         {
           "invocation_id": "error-002",
           "user_content": {
             "parts": [
               {
+                "video_metadata": null,
+                "thought": null,
+                "inline_data": null,
+                "file_data": null,
+                "thought_signature": null,
+                "function_call": null,
+                "code_execution_result": null,
+                "executable_code": null,
+                "function_response": null,
                 "text": "{\"scene_description\": \"\", \"character_descriptions\": {}}"
               }
             ],
@@ -254,6 +404,15 @@
           "final_response": {
             "parts": [
               {
+                "video_metadata": null,
+                "thought": null,
+                "inline_data": null,
+                "file_data": null,
+                "thought_signature": null,
+                "function_call": null,
+                "code_execution_result": null,
+                "executable_code": null,
+                "function_response": null,
                 "text": "{\"success\": false, \"error\": \"No scene description provided\"}"
               }
             ],
@@ -262,13 +421,23 @@
           "intermediate_data": {
             "tool_uses": [],
             "intermediate_responses": []
-          }
+          },
+          "creation_timestamp": 0.0
         },
         {
           "invocation_id": "error-003",
           "user_content": {
             "parts": [
               {
+                "video_metadata": null,
+                "thought": null,
+                "inline_data": null,
+                "file_data": null,
+                "thought_signature": null,
+                "function_call": null,
+                "code_execution_result": null,
+                "executable_code": null,
+                "function_response": null,
                 "text": "Plain text scene without JSON: A simple garden with flowers"
               }
             ],
@@ -277,6 +446,15 @@
           "final_response": {
             "parts": [
               {
+                "video_metadata": null,
+                "thought": null,
+                "inline_data": null,
+                "file_data": null,
+                "thought_signature": null,
+                "function_call": null,
+                "code_execution_result": null,
+                "executable_code": null,
+                "function_response": null,
                 "text": "{\"success\": true, \"images_generated\": 1, \"images_in_bucket\": 1, \"bucket_name\": \"test-genmedia-bucket\", \"token_safe\": true, \"images\": [{\"index\": 0, \"gcs_url\": \"https://storage.googleapis.com/test-genmedia-bucket/generated_images/20241201_140300_garden_plain_0_pqr34567.png\", \"format\": \"png\", \"stored_in_bucket\": true}]}"
               }
             ],
@@ -285,6 +463,7 @@
           "intermediate_data": {
             "tool_uses": [
               {
+                "id": null,
                 "args": {
                   "prompt": "Children's book cartoon illustration with bright vibrant colors, simple shapes, friendly characters. Scene: Plain text scene without JSON: A simple garden with flowers.",
                   "aspect_ratio": "16:9",
@@ -294,14 +473,27 @@
               }
             ],
             "intermediate_responses": []
-          }
+          },
+          "creation_timestamp": 0.0
         }
       ],
       "session_input": {
         "app_name": "story_image_agent",
         "user_id": "user",
         "state": {}
-      }
+      },
+      "creation_timestamp": 0.0
+    },
+    {
+      "eval_id": "case9e6ed5",
+      "conversation": [],
+      "session_input": {
+        "app_name": "story_image_agent",
+        "user_id": "user",
+        "state": {}
+      },
+      "creation_timestamp": 1759605847.6744826
     }
-  ]
+  ],
+  "creation_timestamp": 0.0
 }

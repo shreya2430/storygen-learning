@@ -1,44 +1,37 @@
 #!/bin/bash
+#
+# Loads environment variables from the .env file in the parent directory.
+# This script is designed to be sourced by other scripts.
+#
 
-# Load environment variables from .env file
-# Usage: source ./load-env.sh
+set -e # Exit immediately if a command exits with a non-zero status.
 
-ENV_FILE="../.env"
-
-if [ -f "$ENV_FILE" ]; then
-    echo "📄 Loading environment variables from $ENV_FILE"
-    
-    # Load .env file, ignoring comments and empty lines
-    export $(grep -E '^[a-zA-Z_]+\w*=' "$ENV_FILE")
-    
-    # Set derived variables for deployment
-    export PROJECT_ID="$GOOGLE_CLOUD_PROJECT_ID"
-    export REGION="${REGION:-us-central1}"
-    export BACKEND_SERVICE_NAME="${BACKEND_SERVICE_NAME:-genai-backend}"
-    export FRONTEND_SERVICE_NAME="${FRONTEND_SERVICE_NAME:-genai-frontend}"
-    export BACKEND_IMAGE_NAME="${BACKEND_IMAGE_NAME:-storygen-backend}"
-    export FRONTEND_IMAGE_NAME="${FRONTEND_IMAGE_NAME:-storygen-frontend}"
-    export ARTIFACT_REPO="${ARTIFACT_REPO:-storygen-repo}"
-    export BUCKET_NAME="$GENMEDIA_BUCKET"
-    export SECRET_NAME="${SECRET_MANAGER}"
-    export BACKEND_MEMORY="${BACKEND_MEMORY:-2Gi}"
-    export BACKEND_CPU="${BACKEND_CPU:-2}"
-    export FRONTEND_MEMORY="${FRONTEND_MEMORY:-1Gi}"
-    export FRONTEND_CPU="${FRONTEND_CPU:-1}"
-    export MIN_INSTANCES="${MIN_INSTANCES:-0}"
-    export MAX_INSTANCES="${MAX_INSTANCES:-2}"
-    
-    echo "✅ Environment variables loaded successfully"
-    echo "📋 Configuration Summary:"
-    echo "   Project ID: $PROJECT_ID"
-    echo "   Region: $REGION"
-    echo "   Backend Service: $BACKEND_SERVICE_NAME"
-    echo "   Frontend Service: $FRONTEND_SERVICE_NAME"
-    echo "   Bucket: $BUCKET_NAME"
-    echo "   Secret: $SECRET_NAME"
+# --- Load Environment Variables ---
+# The .env file is expected to be in the root of the storygen-learning directory
+if [ -f "../.env" ]; then
+  echo "Loading environment variables from ../.env"
+  export $(grep -v '^#' ../.env | xargs)
 else
-    echo "❌ Environment file not found: $ENV_FILE"
-    echo "Please create a .env file in the parent directory with your configuration."
-    echo "You can copy from .env.template and customize for your project."
-    exit 1
+  echo "Error: .env file not found in the parent directory (../.env)."
+  echo "Please ensure a .env file exists in the 'storygen-learning' root with required variables."
+  exit 1
 fi
+
+# --- Validate Required Variables ---
+required_vars=("PROJECT_ID" "REGION" "SERVICE_ACCOUNT_NAME")
+missing_vars=()
+for var in "${required_vars[@]}"; do
+  if [ -z "${!var}" ]; then
+    missing_vars+=("$var")
+  fi
+done
+
+if [ ${#missing_vars[@]} -ne 0 ]; then
+  echo "Error: The following required environment variables are not set in .env:"
+  for var in "${missing_vars[@]}"; do
+    echo "  - $var"
+  done
+  exit 1
+fi
+
+echo "Environment variables loaded successfully."

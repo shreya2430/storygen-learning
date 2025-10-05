@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 import os
+import sys
 import json
 import asyncio
 import logging
@@ -15,6 +16,9 @@ from fastapi.staticfiles import StaticFiles
 from fastapi.responses import FileResponse
 from fastapi.middleware.cors import CORSMiddleware
 from contextlib import asynccontextmanager
+
+# Add the backend directory to the Python path to allow for absolute imports
+sys.path.insert(0, os.path.abspath(os.path.dirname(__file__)))
 
 from story_agent.agent import root_agent as story_agent
 from story_agent.story_image_function import DirectImageFunction
@@ -35,7 +39,7 @@ app = FastAPI(title="StoryGen Backend", description="ADK-powered story generatio
 # Add CORS middleware to allow frontend connections
 app.add_middleware(
     CORSMiddleware,
-    allow_origin_regex="https?://.*(localhost|run\.app)(:\d+)?|https?://.*\.run\.app",  # Allow localhost and all Cloud Run domains
+    allow_origin_regex=r"https?://.*(localhost|run\.app)(:\d+)?/?",  # Allow localhost and all Cloud Run domains
     allow_origins=["http://localhost:3000", "http://127.0.0.1:3000"],  # Next.js default ports
     allow_credentials=True,
     allow_methods=["*"],
